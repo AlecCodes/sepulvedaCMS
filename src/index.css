@@ -13,6 +13,23 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.card{
+  border: solid;
+  display: flex;
+  flex-direction: row;
+}
+
+.nameSection , .ingredientsSection{
+  border: solid;
+  flex: 1;
+  box-sizing: border-box;
+  
+}
+
+#butcherImage{
+  width: 100%;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
