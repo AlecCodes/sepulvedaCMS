@@ -23,7 +23,18 @@
   border: solid;
   flex: 1;
   box-sizing: border-box;
-  
+}
+
+.allergies,
+.animals {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.icon img{
+  width: 60px;
 }
 
 #butcherImage{
