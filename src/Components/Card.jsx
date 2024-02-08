@@ -34,9 +34,9 @@ function Card(props){
                 />    
                 </li>}
             </ul>
-            <div className="spice">
+            <ul className="spice">
                 <SpiceMeter spiceLevel={props.sausage.spiceLevel}/>
-            </div>
+            </ul>
             <ul className="animals">
                 {props.sausage.isBeef && <li className="icon"><img
                 src="https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Silhouettes-PNG/Cow_Silhouette_PNG_Clip_Art_Image.png?m=1510113302"/></li>}

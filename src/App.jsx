@@ -25,9 +25,9 @@ function App() {
       <div>
         <h1>HIIi omg</h1>
         <ul>
-          {result.map((element) => {
+          {result.map((element, index) => {
             return(
-              <Card sausage={element}/>
+              <Card sausage={element} key={index}/>
             )
           })}
 

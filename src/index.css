@@ -25,6 +25,8 @@
   box-sizing: border-box;
 }
 
+
+.spice,
 .allergies,
 .animals {
   list-style: none;
@@ -35,6 +37,10 @@
 
 .icon img{
   width: 60px;
+}
+
+.spice .icon img{
+  width: 30px;
 }
 
 #butcherImage{
