@@ -23,7 +23,7 @@ function Card(props){
                 src="https://imgur.com/leN7joT.png"
                 />    
                 </li>}
-                {props.sausage.isSugarFreee && <li className="icon">
+                {props.sausage.isSugarFree && <li className="icon">
                 <img
                 src="https://imgur.com/nCxVwJN.png"
                 />    
@@ -50,7 +50,9 @@ function Card(props){
         </div>
         <div
         className="ingredientsSection"
-        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minus voluptatibus, eius recusandae voluptatum magnam libero</div>
+        >
+            <p>{props.sausage.ingredients}</p>
+        </div>
     </div>
     )
 }

@@ -13,7 +13,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.sausageCards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.ingredientsSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
 .card{
+  width: 30%;
   border: solid;
   display: flex;
   flex-direction: row;
@@ -36,11 +50,11 @@
 }
 
 .icon img{
-  width: 60px;
+  width: 40px;
 }
 
 .spice .icon img{
-  width: 30px;
+  width: 20px;
 }
 
 #butcherImage{

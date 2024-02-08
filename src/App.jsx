@@ -23,8 +23,8 @@ function App() {
         />
       </div>
       <div>
-        <h1>HIIi omg</h1>
-        <ul>
+        <h1>Today's Sausages</h1>
+        <ul className='sausageCards'>
           {result.map((element, index) => {
             return(
               <Card sausage={element} key={index}/>
