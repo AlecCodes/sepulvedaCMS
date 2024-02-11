@@ -43,7 +43,7 @@ function Card(props){
                 {props.sausage.isPork && <li className="icon"><img
                 src="https://i.pinimg.com/originals/ea/89/94/ea8994889ef97021a1b6b4feece51d9c.png"
                 /></li>}
-                {props.sausage.isChicken && <li className="icon"><img
+                {props.sausage.isChicken && <li className="icon" id="chicken"><img
                 src="https://img2.embroiderydesigns.com/printart/xlarge/cosmos_finearts/pgcfa1504.webp"
                 /></li>}
             </ul>

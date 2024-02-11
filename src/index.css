@@ -13,9 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root{
+  text-align: center;
+}
+
 .sausageCards{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -23,14 +27,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
-.card{
-  width: 30%;
+.card {
+  flex: 0 0 calc(40%); /* Adjust the percentage as needed, and include margin */
+  margin: 10px; /* Add margin between cards */
   border: solid;
   display: flex;
   flex-direction: row;
+  box-sizing: border-box;
+}
+
+
+.nameSection{
+  background-color: white;
+  h3 {
+    color: #1a1a1a;
+  }
 }
 
 .nameSection , .ingredientsSection{
@@ -53,8 +66,9 @@
   width: 40px;
 }
 
-.spice .icon img{
-  width: 20px;
+
+#chicken img{
+  width: 23px;
 }
 
 #butcherImage{
@@ -100,6 +114,24 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (max-width: 768px) {
+
+  .sausageCards {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .ingredientsSection{
+    max-height: 200px;
+    overflow: scroll;
+  }
+
+  .card {
+    flex: 1;
+  }
 }
 
 @media (prefers-color-scheme: light) {
