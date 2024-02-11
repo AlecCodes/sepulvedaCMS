@@ -15,6 +15,11 @@
 
 #root{
   text-align: center;
+  background-color: navy;
+}
+
+h1{
+  color: white;
 }
 
 .sausageCards{
@@ -27,12 +32,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 
 .card {
   flex: 0 0 calc(40%); /* Adjust the percentage as needed, and include margin */
   margin: 10px; /* Add margin between cards */
-  border: solid;
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
@@ -47,7 +52,6 @@
 }
 
 .nameSection , .ingredientsSection{
-  border: solid;
   flex: 1;
   box-sizing: border-box;
 }
@@ -72,6 +76,8 @@
 }
 
 #butcherImage{
+  object-fit: cover;
+  height: 400px;
   width: 100%;
 }
 
@@ -80,6 +86,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -118,10 +125,15 @@ button:focus-visible {
 
 @media (max-width: 768px) {
 
+
+
   .sausageCards {
+    list-style: none;
     display: flex;
     flex-direction: column;
     align-content: center;
+    padding-left: 0%;
+    padding: 4%;
   }
 
   .ingredientsSection{
