@@ -37,6 +37,11 @@ h1{
 }
 
 .card {
+
+  border-radius: 10px; /* You can adjust the value as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Add more layers for a pronounced effect */
+  overflow: hidden; 
+
   flex: 0 0 calc(40%); /* Adjust the percentage as needed, and include margin */
   margin: 10px; /* Add margin between cards */
   display: flex;
@@ -46,6 +51,7 @@ h1{
 
 
 .nameSection{
+  
   background-color: white;
   h3 {
     color: #1a1a1a;
